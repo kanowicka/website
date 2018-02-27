@@ -1,6 +1,7 @@
 ---
 layout: main
 section: index
+background: 123
 ---
 
 <div class="jumbotron">
