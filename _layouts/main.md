@@ -10,10 +10,12 @@
     <meta name="author" content="Karolina Szpera">
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/main.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,7 +28,7 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation" class="active"><a href="index.html">Home</a></li>
             <li role="presentation"><a href="about.html">About</a></li>
             <li role="presentation"><a href="contact.html">Contact</a></li>
           </ul>
@@ -36,11 +38,9 @@
 
       {{ content }}
 
-
       <footer class="footer">
         <p>&copy; 2018 Karolina Szpera</p>
       </footer>
     </div> <!-- /container -->
-
 </body>
 </html>
