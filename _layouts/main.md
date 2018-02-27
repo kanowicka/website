@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Karolina Szpera</title>
+    <title>Karolina Szpera {%if page.title %} - {{ page.title }}{% endif %}</title>
     <meta name="description" content="">
     <meta name="author" content="Karolina Szpera">
 
@@ -28,9 +28,9 @@
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="index.html">Home</a></li>
-            <li role="presentation"><a href="about.html">About</a></li>
-            <li role="presentation"><a href="contact.html">Contact</a></li>
+            <li role="presentation"{%if page.section == "index" %} class="active"{% endif %}><a href="index.html">Home</a></li>
+            <li role="presentation"{%if page.section == "about" %} class="active"{% endif %}><a href="about.html">About</a></li>
+            <li role="presentation"{%if page.section == "contact" %} class="active"{% endif %}><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
         <h3 class="text-muted">Karolina Szpera</h3>
@@ -42,5 +42,14 @@
         <p>&copy; 2018 Karolina Szpera</p>
       </footer>
     </div> <!-- /container -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+        $("[data-toggle=popover]").popover();
+    </script>
 </body>
 </html>

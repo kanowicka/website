@@ -1,5 +1,6 @@
 ---
 layout: main
+section: index
 ---
 
 <div class="jumbotron">
